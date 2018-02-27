@@ -1,5 +1,6 @@
 {
   "name": "Holes",
+  "base": "PersistedModel",
   "options": {
     "idInjection": false,
     "mysql": {
@@ -10,11 +11,11 @@
   "properties": {
     "holeId": {
       "type": "Number",
+      "id": 1,
       "required": true,
       "length": null,
       "precision": 10,
       "scale": 0,
-      "id": 1,
       "mysql": {
         "columnName": "hole_id",
         "dataType": "int",
@@ -174,5 +175,9 @@
         "nullable": "Y"
       }
     }
-  }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
 }

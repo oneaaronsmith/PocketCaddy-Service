@@ -1,5 +1,6 @@
 {
   "name": "Scores",
+  "base": "PersistedModel",
   "options": {
     "idInjection": false,
     "mysql": {
@@ -38,5 +39,9 @@
         "nullable": "Y"
       }
     }
-  }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
 }

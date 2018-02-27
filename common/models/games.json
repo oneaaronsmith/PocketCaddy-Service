@@ -1,5 +1,6 @@
 {
   "name": "Games",
+  "base": "PersistedModel",
   "options": {
     "idInjection": false,
     "mysql": {
@@ -10,11 +11,11 @@
   "properties": {
     "gameId": {
       "type": "Number",
+      "id": 1,
       "required": true,
       "length": null,
       "precision": 10,
       "scale": 0,
-      "id": 1,
       "mysql": {
         "columnName": "game_id",
         "dataType": "int",
@@ -24,5 +25,9 @@
         "nullable": "N"
       }
     }
-  }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
 }
