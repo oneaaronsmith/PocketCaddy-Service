@@ -12,5 +12,47 @@
       "../common/mixins",
       "./mixins"
     ]
+  },
+  "Authorization": {
+    "dataSource": "pocketcaddy-np",
+    "public": true
+  },
+  "Clubs": {
+    "dataSource": "pocketcaddy-np",
+    "public": true
+  },
+  "Swings": {
+    "dataSource": "pocketcaddy-np",
+    "public": true
+  },
+  "Courses": {
+    "dataSource": "pocketcaddy-np",
+    "public": true
+  },
+  "Games": {
+    "dataSource": "pocketcaddy-np",
+    "public": true
+  },
+  "Holes": {
+    "dataSource": "pocketcaddy-np",
+    "public": true
+  },
+  "Scores": {
+    "dataSource": "pocketcaddy-np",
+    "public": true
+  },
+  "Golfers": {
+    "dataSource": "pocketcaddy-np",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "pocketcaddy-np",
+    "public": false,
+    "strict": true
+  },
+  "ACL": {
+    "dataSource": "pocketcaddy-np",
+    "public": false,
+    "strict": true
   }
 }
