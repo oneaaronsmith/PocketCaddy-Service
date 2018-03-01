@@ -13,10 +13,6 @@
       "./mixins"
     ]
   },
-  "Users": {
-    "dataSource": "pocketcaddy-np",
-    "public": true
-  },
   "Authorization": {
     "dataSource": "pocketcaddy-np",
     "public": true
@@ -44,5 +40,19 @@
   "Scores": {
     "dataSource": "pocketcaddy-np",
     "public": true
+  },
+  "Golfers": {
+    "dataSource": "pocketcaddy-np",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "pocketcaddy-np",
+    "public": false,
+    "strict": true
+  },
+  "ACL": {
+    "dataSource": "pocketcaddy-np",
+    "public": false,
+    "strict": true
   }
 }

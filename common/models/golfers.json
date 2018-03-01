@@ -1,0 +1,16 @@
+{
+  "name": "Golfers",
+  "base": "User",
+  "options": {
+    "idInjection": true,
+    "mysql": {
+      "schema": "pocketcaddy_nonprod",
+      "table": "golfers"
+    }
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
