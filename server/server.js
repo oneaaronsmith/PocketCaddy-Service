@@ -2,8 +2,10 @@
 
 var loopback = require('loopback');
 var boot = require('loopback-boot');
+require('dotenv').config();
 
 var app = module.exports = loopback();
+process.env.NODE_ENV = "production";
 
 app.start = function() {
   // start the web server

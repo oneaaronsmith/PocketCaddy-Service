@@ -15,7 +15,7 @@
   },
   "Authorization": {
     "dataSource": "pocketcaddy-np",
-    "public": true
+    "public": false
   },
   "Clubs": {
     "dataSource": "pocketcaddy-np",
