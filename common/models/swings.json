@@ -72,7 +72,16 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "clubs": {
+      "type": "belongsTo",
+      "model": "Clubs",
+      "foreignKey": "clubId",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }

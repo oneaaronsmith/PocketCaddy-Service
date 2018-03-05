@@ -10,7 +10,16 @@
   },
   "properties": {},
   "validations": [],
-  "relations": {},
+  "relations": {
+    "clubs": {
+      "type": "hasMany",
+      "model": "Clubs",
+      "foreignKey": "userId",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }

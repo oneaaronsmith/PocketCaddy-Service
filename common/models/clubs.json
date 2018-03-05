@@ -2,7 +2,7 @@
   "name": "Clubs",
   "base": "PersistedModel",
   "options": {
-    "idInjection": false,
+    "idInjection": true,
     "mysql": {
       "schema": "pocketcaddy_nonprod",
       "table": "clubs"
@@ -87,7 +87,24 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "golfers": {
+      "type": "belongsTo",
+      "model": "Golfers",
+      "foreignKey": "userId",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "swings": {
+      "type": "hasMany",
+      "model": "Swings",
+      "foreignKey": "clubId",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }
