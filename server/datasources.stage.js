@@ -1,5 +1,5 @@
 module.exports = {
-    "pocketcaddy-np": {
+    "pocketcaddy_np": {
       "host": process.env.DB_HOST,
       "port": 3306,
       "url": "",

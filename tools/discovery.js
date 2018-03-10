@@ -8,7 +8,7 @@ var ds = loopback.createDataSource('mysql', {
     "password": "!pocketcaddypass1"
   });
 
-var tablenames = ['golfers']; //['authorization','users','clubs','courses','games','holes','scores','swings'];
+var tablenames = ['scores']; //['authorization','users','clubs','courses','games','holes','scores','swings'];
 
 tablenames.forEach(function(table) {
     var jsonfile = table + ".json";

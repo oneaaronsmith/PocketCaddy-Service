@@ -1,6 +1,5 @@
 {
   "name": "Scores",
-  "base": "PersistedModel",
   "options": {
     "idInjection": false,
     "mysql": {
@@ -24,14 +23,29 @@
         "nullable": "Y"
       }
     },
-    "courseId": {
+    "gameId": {
       "type": "Number",
       "required": false,
       "length": null,
       "precision": 10,
       "scale": 0,
       "mysql": {
-        "columnName": "course_id",
+        "columnName": "game_id",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "score": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "score",
         "dataType": "int",
         "dataLength": null,
         "dataPrecision": 10,
@@ -39,9 +53,5 @@
         "nullable": "Y"
       }
     }
-  },
-  "validations": [],
-  "relations": {},
-  "acls": [],
-  "methods": {}
+  }
 }

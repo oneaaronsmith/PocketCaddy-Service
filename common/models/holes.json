@@ -1,6 +1,5 @@
 {
   "name": "Holes",
-  "base": "PersistedModel",
   "options": {
     "idInjection": false,
     "mysql": {
@@ -11,11 +10,11 @@
   "properties": {
     "holeId": {
       "type": "Number",
-      "id": 1,
-      "required": true,
+      "required": false,
       "length": null,
       "precision": 10,
       "scale": 0,
+      "id": 1,
       "mysql": {
         "columnName": "hole_id",
         "dataType": "int",
@@ -25,138 +24,33 @@
         "nullable": "N"
       }
     },
-    "x1": {
+    "courseId": {
       "type": "Number",
-      "required": false,
+      "required": true,
       "length": null,
-      "precision": 12,
-      "scale": null,
+      "precision": 10,
+      "scale": 0,
       "mysql": {
-        "columnName": "x1",
-        "dataType": "float",
+        "columnName": "course_id",
+        "dataType": "int",
         "dataLength": null,
-        "dataPrecision": 12,
-        "dataScale": null,
-        "nullable": "Y"
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "N"
       }
     },
-    "y1": {
+    "holeNum": {
       "type": "Number",
       "required": false,
       "length": null,
-      "precision": 12,
-      "scale": null,
+      "precision": 10,
+      "scale": 0,
       "mysql": {
-        "columnName": "y1",
-        "dataType": "float",
+        "columnName": "hole_num",
+        "dataType": "int",
         "dataLength": null,
-        "dataPrecision": 12,
-        "dataScale": null,
-        "nullable": "Y"
-      }
-    },
-    "z1": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 12,
-      "scale": null,
-      "mysql": {
-        "columnName": "z1",
-        "dataType": "float",
-        "dataLength": null,
-        "dataPrecision": 12,
-        "dataScale": null,
-        "nullable": "Y"
-      }
-    },
-    "x2": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 12,
-      "scale": null,
-      "mysql": {
-        "columnName": "x2",
-        "dataType": "float",
-        "dataLength": null,
-        "dataPrecision": 12,
-        "dataScale": null,
-        "nullable": "Y"
-      }
-    },
-    "y2": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 12,
-      "scale": null,
-      "mysql": {
-        "columnName": "y2",
-        "dataType": "float",
-        "dataLength": null,
-        "dataPrecision": 12,
-        "dataScale": null,
-        "nullable": "Y"
-      }
-    },
-    "z2": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 12,
-      "scale": null,
-      "mysql": {
-        "columnName": "z2",
-        "dataType": "float",
-        "dataLength": null,
-        "dataPrecision": 12,
-        "dataScale": null,
-        "nullable": "Y"
-      }
-    },
-    "x3": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 12,
-      "scale": null,
-      "mysql": {
-        "columnName": "x3",
-        "dataType": "float",
-        "dataLength": null,
-        "dataPrecision": 12,
-        "dataScale": null,
-        "nullable": "Y"
-      }
-    },
-    "y3": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 12,
-      "scale": null,
-      "mysql": {
-        "columnName": "y3",
-        "dataType": "float",
-        "dataLength": null,
-        "dataPrecision": 12,
-        "dataScale": null,
-        "nullable": "Y"
-      }
-    },
-    "z3": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": 12,
-      "scale": null,
-      "mysql": {
-        "columnName": "z3",
-        "dataType": "float",
-        "dataLength": null,
-        "dataPrecision": 12,
-        "dataScale": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
         "nullable": "Y"
       }
     },
@@ -174,10 +68,96 @@
         "dataScale": 0,
         "nullable": "Y"
       }
+    },
+    "greenX": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 12,
+      "scale": null,
+      "mysql": {
+        "columnName": "green_x",
+        "dataType": "float",
+        "dataLength": null,
+        "dataPrecision": 12,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "greenY": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 12,
+      "scale": null,
+      "mysql": {
+        "columnName": "green_y",
+        "dataType": "float",
+        "dataLength": null,
+        "dataPrecision": 12,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "teeX": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 12,
+      "scale": null,
+      "mysql": {
+        "columnName": "tee_x",
+        "dataType": "float",
+        "dataLength": null,
+        "dataPrecision": 12,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "teeY": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": 12,
+      "scale": null,
+      "mysql": {
+        "columnName": "tee_y",
+        "dataType": "float",
+        "dataLength": null,
+        "dataPrecision": 12,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "middleX": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 12,
+      "scale": null,
+      "mysql": {
+        "columnName": "middle_x",
+        "dataType": "float",
+        "dataLength": null,
+        "dataPrecision": 12,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "middleY": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 12,
+      "scale": null,
+      "mysql": {
+        "columnName": "middle_y",
+        "dataType": "float",
+        "dataLength": null,
+        "dataPrecision": 12,
+        "dataScale": null,
+        "nullable": "Y"
+      }
     }
-  },
-  "validations": [],
-  "relations": {},
-  "acls": [],
-  "methods": {}
+  }
 }
