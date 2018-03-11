@@ -3,7 +3,7 @@
   "options": {
     "idInjection": false,
     "mysql": {
-      "schema": "pocketcaddy_nonprod",
+      "schema": "pocketcaddy_np",
       "table": "authorization"
     }
   },
