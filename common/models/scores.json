@@ -14,7 +14,7 @@
       "length": null,
       "precision": 10,
       "scale": 0,
-      "id": 1,
+      "id": 2,
       "mysql": {
         "columnName": "hole_id",
         "dataType": "int",
@@ -30,7 +30,7 @@
       "length": null,
       "precision": 10,
       "scale": 0,
-      "id": 2,
+      "id": 1,
       "mysql": {
         "columnName": "game_id",
         "dataType": "int",
