@@ -14,44 +14,44 @@
     ]
   },
   "Authorization": {
-    "dataSource": "pocketcaddy-np",
+    "dataSource": "pocketcaddy_np",
     "public": false
   },
   "Clubs": {
-    "dataSource": "pocketcaddy-np",
+    "dataSource": "pocketcaddy_np",
     "public": true
   },
   "Swings": {
-    "dataSource": "pocketcaddy-np",
+    "dataSource": "pocketcaddy_np",
     "public": true
   },
   "Courses": {
-    "dataSource": "pocketcaddy-np",
+    "dataSource": "pocketcaddy_np",
     "public": true
   },
   "Games": {
-    "dataSource": "pocketcaddy-np",
+    "dataSource": "pocketcaddy_np",
     "public": true
   },
   "Holes": {
-    "dataSource": "pocketcaddy-np",
+    "dataSource": "pocketcaddy_np",
     "public": true
   },
   "Scores": {
-    "dataSource": "pocketcaddy-np",
+    "dataSource": "pocketcaddy_np",
     "public": true
   },
   "Golfers": {
-    "dataSource": "pocketcaddy-np",
+    "dataSource": "pocketcaddy_np",
     "public": true
   },
   "AccessToken": {
-    "dataSource": "pocketcaddy-np",
+    "dataSource": "pocketcaddy_np",
     "public": false,
     "strict": true
   },
   "ACL": {
-    "dataSource": "pocketcaddy-np",
+    "dataSource": "pocketcaddy_np",
     "public": false,
     "strict": true
   }
