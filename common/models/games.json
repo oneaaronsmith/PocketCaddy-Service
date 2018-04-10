@@ -10,11 +10,11 @@
   "properties": {
     "gameId": {
       "type": "Number",
+      "id": 1,
       "required": false,
       "length": null,
       "precision": 10,
       "scale": 0,
-      "id": 1,
       "mysql": {
         "columnName": "game_id",
         "dataType": "int",
@@ -84,5 +84,9 @@
         "nullable": "Y"
       }
     }
-  }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
 }
