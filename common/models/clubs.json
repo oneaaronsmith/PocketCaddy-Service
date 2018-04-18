@@ -113,7 +113,7 @@
       "permission": "DENY"
     },
     {
-      "accessType": "READ",
+      "accessType":  "READ",
       "principalType": "ROLE",
       "principalId": "$owner",
       "permission": "ALLOW"
