@@ -13,10 +13,6 @@
       "./mixins"
     ]
   },
-  "Authorization": {
-    "dataSource": "pocketcaddy_np",
-    "public": false
-  },
   "Clubs": {
     "dataSource": "pocketcaddy_np",
     "public": true

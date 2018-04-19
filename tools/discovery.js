@@ -1,11 +1,6 @@
 var loopback = require('loopback');
 var fs = require('fs');
 var ds = loopback.createDataSource('mysql', {
-    "host": "pocketcaddy-np.cwydbfrpny9l.us-east-1.rds.amazonaws.com",
-    "port": 3306,
-    "database": "pocketcaddy_nonprod",
-    "username": "master",
-    "password": "!pocketcaddypass1"
   });
 
 var tablenames = ['scores']; //['authorization','users','clubs','courses','games','holes','scores','swings'];
