@@ -54,5 +54,17 @@
     "dataSource": "pocketcaddy_np",
     "public": false,
     "strict": true
+  },
+  "User": {
+    "dataSource": "pocketcaddy_np",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "pocketcaddy_np",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "pocketcaddy_np",
+    "public": false
   }
 }
