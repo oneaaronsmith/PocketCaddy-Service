@@ -3,7 +3,7 @@
 module.exports = function enableAuthentication(server) {
     server.enableAuth();
 
-    var ds = server.dataSources.pocketcaddy_np;
+    var ds = server.dataSources.pocketcaddy_prod;
  
     var lbTables = ['ACL', 'RoleMapping', 'Role'];
     

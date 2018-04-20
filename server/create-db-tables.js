@@ -10,7 +10,7 @@ var server = require('./server');
 });*/
 
 var ds = require('./datasources.production.js');
-var ds = server.dataSources.pocketcaddy_np;
+var ds = server.dataSources.pocketcaddy_prod;
 
 var lbTables = ['User', 'AccessToken', 'ACL', 'RoleMapping', 'Role'];
 

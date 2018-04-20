@@ -1,8 +1,24 @@
 'use strict';
 
+var https = require('https');
+var sslConfig = require('./ssl-config');
 var loopback = require('loopback');
 var boot = require('loopback-boot');
+var options = {
+  key: sslConfig.privateKey,
+  cert: sslConfig.certificate
+};
 require('dotenv').config();
+
+/*
+server.listen(app.get('port'), function() {
+  var baseUrl = (httpOnly? 'http://' : 'https://') + app.get('host') + ':' + app.get('port');
+  app.emit('started', baseUrl);
+  console.log('LoopBack server listening @ %s%s', baseUrl, '/');
+});
+return server;
+*/
+
 
 var app = module.exports = loopback();
 process.env.NODE_ENV = "production";
@@ -10,8 +26,9 @@ process.env.NODE_ENV = "production";
 app.start = function() {
   // start the web server
   return app.listen(function() {
+    var baseUrl = ('https://') + app.get('host') + ':' + app.get('port');
     app.emit('started');
-    var baseUrl = app.get('url').replace(/\/$/, '');
+    //var baseUrl = app.get('url').replace(/\/$/, '');
     console.log('Web server listening at: %s', baseUrl);
     if (app.get('loopback-component-explorer')) {
       var explorerPath = app.get('loopback-component-explorer').mountPath;

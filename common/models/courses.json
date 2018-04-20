@@ -4,7 +4,7 @@
   "options": {
     "idInjection": false,
     "mysql": {
-      "schema": "pocketcaddy_nonprod",
+      "schema": "pocketcaddy_prod",
       "table": "courses"
     }
   },
