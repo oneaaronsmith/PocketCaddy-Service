@@ -5,7 +5,7 @@ module.exports = {
       "url": "",
       "database": process.env.DB_NAME,
       "password": process.env.DB_PASS,
-      "name": "pocketcaddy-prod",
+      "name": "pocketcaddy_prod",
       "user": process.env.DB_USER,
       "connector": "mysql"
     }
