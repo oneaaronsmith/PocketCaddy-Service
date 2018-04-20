@@ -24,4 +24,5 @@ npm-debug.log
 /server/private/*.pem
 /server/private/*csr
 /server/private/*.key
+/server/private/*
 *.key
