@@ -1,7 +1,7 @@
 var async = require('async');
 module.exports = function(app) {
 
-    var mysqlDs = app.dataSources.pocketcaddy_np;
+    var mysqlDs = app.dataSources.pocketcaddy_prod;
 
     async.parallel({
         golferCreate: async.apply(createGolfer),
