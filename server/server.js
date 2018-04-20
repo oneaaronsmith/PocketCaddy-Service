@@ -3,25 +3,27 @@ var loopback = require('loopback');
 var boot = require('loopback-boot');
 var http = require('http');
 var https = require('https');
-var sslConfig = require('./ssl-config');
+//var sslConfig = require('./ssl-config');
 require('dotenv').config();
 
 var app = module.exports = loopback();
-process.env.NODE_ENV = "production";
-process.env.HTTP = false;
-var httpOnly = process.env.HTTP;
-//console.log("HTTP : " + httpOnly);
-// boot scripts mount components like REST API
+var httpOnly = true;
+
+console.log("HTTP : " + httpOnly);
+
 boot(app, __dirname);
 
-app.start = function(httpOnly) {
+app.start = function() {
   var server = null;
-  var options = {
-    key: sslConfig.privateKey,
-    cert: sslConfig.certificate,
-  };
-  server = https.createServer(options, app);
-
+  if (httpOnly == false) {
+    var options = {
+      key: sslConfig.privateKey,
+      cert: sslConfig.certificate,
+    };
+    server = https.createServer(options, app);
+  } else {
+    server = http.createServer(app);
+  }
   server.listen(app.get('port'), function() {
     var baseUrl = (httpOnly ? 'http://' : 'https://') + app.get('host') + ':' + app.get('port');
     app.emit('started', baseUrl);
