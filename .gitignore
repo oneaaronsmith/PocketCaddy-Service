@@ -20,3 +20,8 @@ node_modules
 npm-debug.log
 /tools/*.js
 /tools/*.json
+/server/private/*.crt
+/server/private/*.pem
+/server/private/*csr
+/server/private/*.key
+*.key
