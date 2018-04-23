@@ -12,9 +12,9 @@
     //Games.disableRemoteMethodByName('updateAttributes');          //Removes (PUT,PATCH) /model/:id
     //Games.disableRemoteMethodByName('prototype.updateAttributes');          //Removes (PUT,PATCH) /model/:id
     Games.disableRemoteMethodByName('createChangeStream');        //Removes (POST) /model/change-stream
-    Games.disableRemoteMethodByName('updateAll');                 //Removes (POST) /model/update
+    //Games.disableRemoteMethodByName('updateAll');                 //Removes (POST) /model/update
     Games.disableRemoteMethodByName('replaceOrCreate');           //Removes (POST) /model/replaceOrCreate
-    Games.disableRemoteMethodByName('replaceById');	            //Removes (POST) /model/:id/replace
+    //Games.disableRemoteMethodByName('replaceById');	            //Removes (POST) /model/:id/replace
     Games.disableRemoteMethodByName('upsertWithWhere');           //Removes (PUT,PATCH) /model/upsertWithWhere
     //Games.disableRemoteMethodByName('upsertById');                //Removes (PUT,PATCH) /model/:id
 
