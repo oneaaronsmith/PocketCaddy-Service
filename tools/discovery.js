@@ -1,14 +1,15 @@
+"use strict"
 var loopback = require('loopback');
 var fs = require('fs');
 var ds = loopback.createDataSource('mysql', {
-  });
+});
 
-var tablenames = ['scores']; //['authorization','users','clubs','courses','games','holes','scores','swings'];
+var tablenames = ['comments']; //['authorization','users','clubs','courses','games','holes','scores','swings', 'comments'];
 
 tablenames.forEach(function(table) {
     var jsonfile = table + ".json";
 
-    ds.discoverSchema(table, {owner : 'pocketcaddy_nonprod'}, function(err, schema) {
+    ds.discoverSchema(table, {owner : 'pocketcaddy_prod'}, function(err, schema) {
     if(err) {
         console.error(err);
         return;

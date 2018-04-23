@@ -41,6 +41,10 @@
     "dataSource": "pocketcaddy_prod",
     "public": true
   },
+  "Comments": {
+    "dataSource": "pocketcaddy_prod",
+    "public": true
+  },
   "AccessToken": {
     "dataSource": "pocketcaddy_prod",
     "public": false,
