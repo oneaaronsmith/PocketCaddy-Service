@@ -9,11 +9,11 @@
     //Comments.disableRemoteMethodByName('deleteById');                //Removes (DELETE) /model/:id
     Comments.disableRemoteMethodByName('count');                     //Removes (GET) /model/count
     //Comments.disableRemoteMethodByName('updateAttributes');          //Removes (PUT,PATCH) /model/:id
-    Comments.disableRemoteMethodByName('prototype.updateAttributes');          //Removes (PUT,PATCH) /model/:id
+    //Comments.disableRemoteMethodByName('prototype.updateAttributes');          //Removes (PUT,PATCH) /model/:id
     Comments.disableRemoteMethodByName('createChangeStream');        //Removes (POST) /model/change-stream
-    Comments.disableRemoteMethodByName('updateAll');                 //Removes (POST) /model/update
+    //Comments.disableRemoteMethodByName('updateAll');                 //Removes (POST) /model/update
     Comments.disableRemoteMethodByName('replaceOrCreate');           //Removes (POST) /model/replaceOrCreate
     Comments.disableRemoteMethodByName('replaceById');	            //Removes (POST) /model/:id/replace
-    Comments.disableRemoteMethodByName('upsertWithWhere');           //Removes (PUT,PATCH) /model/upsertWithWhere
+    //Comments.disableRemoteMethodByName('upsertWithWhere');           //Removes (PUT,PATCH) /model/upsertWithWhere
     //Comments.disableRemoteMethodByName('upsertById');                //Removes (PUT,PATCH) /model/:id
 };
